@@ -1,5 +1,9 @@
 # Intelligent Email Routing System
-
+![Make.com](https://img.shields.io/badge/Make.com-Automation-6D00CC?style=for-the-badge)
+![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4.1_Mini-10A37F?style=for-the-badge)
+![Gmail](https://img.shields.io/badge/Gmail-API-EA4335?style=for-the-badge)
+![Slack](https://img.shields.io/badge/Slack-API-4A154B?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 AI-powered email routing system that classifies, prioritizes, routes incoming emails to the appropriate department, and automates customer acknowledgements
 
 ## Tech Stack
