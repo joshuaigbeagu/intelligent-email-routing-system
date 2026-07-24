@@ -15,8 +15,15 @@ AI-powered email routing system that classifies, prioritizes, routes incoming em
 
 Businesses often receive sales inquiries, support requests, HR questions, and finance-related emails through a shared inbox. This project automates the entire email triage process by using AI to classify, prioritize, and route incoming emails while generating professional acknowledgement responses for customer support inquiries.
 ---
+## Project Highlights
 
-## Key Features
+- 🤖 AI-powered email classification using GPT-4.1 Mini
+- 🚦 Intelligent priority assignment (High, Medium, Low)
+- 📬 Automated routing to department-specific Slack channels
+- ✉️ AI-generated customer acknowledgement emails
+- 🛡️ Structured JSON outputs for reliable workflow automation
+- ⚡ Built with Make.com for scalable, low-code orchestration
+## Features
 
 - 📧 Monitors a Gmail inbox for new emails.
 - 🤖 Uses GPT-4.1 Mini to classify incoming emails.
@@ -33,3 +40,8 @@ Businesses often receive sales inquiries, support requests, HR questions, and fi
 ![Workflow](assets/emailrouting.jpg)
 
 *Complete workflow illustrating email ingestion, AI classification, intelligent routing, Slack notifications, and automated customer acknowledgements.*
+## Demo
+
+| Incoming Email | AI Processing | Result |
+|----------------|--------------|--------|
+| Gmail receives a new email | AI classifies the department, assigns priority, and generates a summary | Email is routed to the correct Slack channel and customer support receives an automated acknowledgement when applicable |
