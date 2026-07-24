@@ -1,6 +1,6 @@
 # Intelligent Email Routing System
 
-An AI-powered email automation system that classifies incoming emails, assigns priority, routes them to the appropriate department, and automatically drafts customer acknowledgement emails.
+AI-powered email routing system that classifies, prioritizes, routes incoming emails to the appropriate department, and automates customer acknowledgements
 
 ## Tech Stack
 
@@ -26,3 +26,10 @@ Businesses often receive sales inquiries, support requests, HR questions, and fi
 - ✉️ Drafts acknowledgement emails for Customer Support.
 - ⏱️ Delays automated responses for a more natural customer experience.
 - 🛡️ Uses structured JSON outputs for reliable automation.
+---
+
+## Workflow
+
+![Workflow](assets/emailrouting.jpg)
+
+*Complete workflow illustrating email ingestion, AI classification, intelligent routing, Slack notifications, and automated customer acknowledgements.*
