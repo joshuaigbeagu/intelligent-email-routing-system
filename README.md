@@ -81,4 +81,19 @@ To run this workflow, you'll need:
 make/Intelligent Email Routing System.blueprint.json
 ```
 
+---
+
+## Repository Structure
+
+```text
+intelligent-email-routing-system/
+├── assets/
+│   ├── emailrouting.jpg
+│   └── README.md
+├── make/
+│   ├── Intelligent Email Routing System.blueprint.json
+│   └── README.md
+├── LICENSE
+└── README.md
+```
 > **Note:** API keys, OAuth connections, and other sensitive credentials are **not** included in the exported blueprint and must be configured after importing the scenario.
