@@ -45,3 +45,16 @@ Businesses often receive sales inquiries, support requests, HR questions, and fi
 | Incoming Email | AI Processing | Result |
 |----------------|--------------|--------|
 | Gmail receives a new email | AI classifies the department, assigns priority, and generates a summary | Email is routed to the correct Slack channel and customer support receives an automated acknowledgement when applicable |
+---
+
+## Make Blueprint
+
+The exported Make.com scenario blueprint is included in this repository for reference and can be imported directly into Make after configuring the required connections and API credentials.
+
+**Blueprint Location:**
+
+```text
+make/Intelligent Email Routing System.blueprint.json
+```
+
+> **Note:** API keys, OAuth connections, and other sensitive credentials are **not** included in the exported blueprint and must be configured after importing the scenario.
