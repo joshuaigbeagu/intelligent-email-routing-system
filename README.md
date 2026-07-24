@@ -59,6 +59,24 @@ The exported Make.com scenario blueprint is included in this repository for refe
 
 **Blueprint Location:**
 
+---
+
+## Setup
+
+To run this workflow, you'll need:
+
+- A Make.com account
+- A Gmail account
+- An OpenAI API key
+- A Slack workspace
+
+### Import the Blueprint
+
+1. Download the blueprint from the `make` folder.
+2. Import it into Make.com.
+3. Connect your Gmail, OpenAI, and Slack accounts.
+4. Update the monitored Gmail inbox and Slack channels.
+5. Enable the scenario and start receiving automated email routing.
 ```text
 make/Intelligent Email Routing System.blueprint.json
 ```
