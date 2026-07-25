@@ -6,7 +6,7 @@
 ![Slack](https://img.shields.io/badge/Slack-API-4A154B?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 
-AI-powered email routing system that classifies, prioritizes, routes incoming emails to the appropriate department, and automates customer acknowledgements
+An AI-powered email routing system that automatically classifies, prioritises, and routes incoming emails to the appropriate department while generating intelligent customer acknowledgement responses.
 
 ## Tech Stack
 
@@ -19,50 +19,75 @@ AI-powered email routing system that classifies, prioritizes, routes incoming em
 
 ## The Challenge
 
-Businesses often receive sales inquiries, support requests, HR questions, and finance-related emails through a shared inbox. This project automates the entire email triage process by using AI to classify, prioritize, and route incoming emails while generating professional acknowledgement responses for customer support inquiries.
+Businesses often receive sales enquiries, support requests, HR questions, and finance-related emails through a shared inbox. Manually reviewing, prioritising, and forwarding every email is repetitive, slows response times, and increases the risk of requests reaching the wrong team.
+
 ---
 
-## Features
+## The Solution
+
+This workflow monitors a Gmail inbox for new emails, extracts the relevant information, and uses GPT-4.1 Mini to classify each message into the appropriate department. It assigns a priority level, generates a concise summary, routes the email to the correct Slack channel, and automatically drafts acknowledgement emails for Customer Support enquiries.
+
+---
+
+## Key Capabilities
 
 - 📧 Monitors a Gmail inbox for new emails.
-- 🤖 Uses GPT-4.1 Mini to classify incoming emails.
+- 🤖 Classifies emails using GPT-4.1 Mini.
 - 🚦 Assigns High, Medium, or Low priority.
 - 📝 Generates concise AI summaries.
-- 💬 Routes emails to the appropriate Slack channel.
-- ✉️ Drafts acknowledgement emails for Customer Support.
-- ⏱️ Delays automated responses for a more natural customer experience.
-- 🛡️ Uses structured JSON outputs for reliable automation.
+- 💬 Routes emails to department-specific Slack channels.
+- ✉️ Drafts professional acknowledgement emails for Customer Support.
+- ⏱️ Delays automated responses to create a more natural customer experience.
+- 🛡️ Uses structured JSON outputs for reliable downstream automation.
+
 ---
 
 ## Workflow
 
 ![Workflow](assets/emailrouting.jpg)
 
-*Complete Make.com workflow for AI-powered email classification, routing, Slack notifications, and automated customer acknowledgements.*
+*Complete Make.com workflow demonstrating AI-powered email classification, intelligent routing, Slack notifications, and automated customer acknowledgements.*
 
-## Demo
+---
+
+## Business Impact
+
+- Eliminates manual email triage and routing.
+- Ensures enquiries reach the correct team within seconds.
+- Improves response times through intelligent prioritisation.
+- Provides immediate acknowledgement for customer support requests.
+- Scales efficiently without increasing administrative workload.
+
+---
+
+## Example Flow
 
 | Incoming Email | AI Processing | Outcome |
-|----------------|--------------|--------|
-| Customer sends a billing enquiry | GPT classifies it as Finance, assigns High priority and generates a summary | Finance team receives a Slack notification instantly |
+|----------------|--------------|---------|
+| Customer sends a billing enquiry | GPT classifies it as **Finance**, assigns **High** priority, and generates a concise summary | The Finance team receives an instant Slack notification with the email summary and priority level. |
+
 ---
 
 ## Make Blueprint
 
-The Make.com scenario blueprint is included for reference and can be imported after configuring the required connections.
+The exported Make.com scenario blueprint is included in this repository and can be imported after configuring the required API connections and credentials.
 
-**Blueprint Location:**
+**Blueprint Location**
+
+```text
+make/Intelligent Email Routing System.blueprint.json
+```
 
 ---
 
 ## Setup
 
-To run this workflow, you'll need:
+### Requirements
 
-- A Make.com account
-- A Gmail account
-- An OpenAI API key
-- A Slack workspace
+- Make.com account
+- Gmail account
+- OpenAI API key
+- Slack workspace
 
 ### Import the Blueprint
 
@@ -70,10 +95,7 @@ To run this workflow, you'll need:
 2. Import it into Make.com.
 3. Connect your Gmail, OpenAI, and Slack accounts.
 4. Update the monitored Gmail inbox and Slack channels.
-5. Enable the scenario and start receiving automated email routing.
-```text
-make/Intelligent Email Routing System.blueprint.json
-```
+5. Enable the scenario.
 
 ---
 
@@ -90,4 +112,5 @@ intelligent-email-routing-system/
 ├── LICENSE
 └── README.md
 ```
+
 > **Note:** API keys, OAuth connections, and other sensitive credentials are **not** included in the exported blueprint and must be configured after importing the scenario.
